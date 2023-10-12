@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая страница</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Формы</h2>
+    <form action="#">
+        <label>
+            Имя:
+            <input type="text" name="username" value="Юрий">
+        </label>
+        <label>
+            Возраст:
+            <input type="number" name="age" placeholder="Полный возраст">
+        </label>
+        <label>
+            Дата рождения:
+            <input type="date" name="birth">
+        </label>
+        <label>
+            Любимый цвет:
+            <input type="color" name="color">
+        </label>
+        Пол:
+        <label>
+            <input type="radio" name="gender" required value="male">
+            М
+        </label>
+        <label>
+            <input type="radio" name="gender" required value="female">
+            Ж
+        </label>
+        <label>
+            <input type="checkbox">
+            Считаю Юрия Максимовича лучшим преподавателем
+        </label>
+        <select name="country">
+            <option value="">Выберите страну</option>
+            <option value="uz">Самая лучшая страна в мире</option>
+            <option value="non-uz">Не Узбекистан</option>
+        </select>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+
+    <h2>Отправка СМС</h2>
+    <form action="https://api.tehnikum.school/sms/sms.php" method="post">
+        <label>
+            Номер телефона:
+            <input type="tel" name="sms_phone">
+        </label>
+        <label>
+            Текст СМС:
+            <input type="text" name="sms_text">
+        </label>
+        <input type="hidden" name="token" value="Students:1234567">
+        <input type="submit" value="Отправить СМС">
+    </form>
+
+    <img src="./photo.jpeg" alt="Юрий Максимович" id="legend">
+
+</body>
+</html>
