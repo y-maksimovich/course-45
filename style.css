@@ -2,14 +2,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: yellowgreen;
+}
+
 label {
     display: block;
 }
-
-
-
-
-
 
 #legend {
     width: 300px;
